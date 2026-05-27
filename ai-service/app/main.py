@@ -22,10 +22,10 @@ app.add_middleware(InternalAPIKeyMiddleware)
 AI_MODE = os.environ.get("AI_MODE", "remote").lower()
 
 # ---------- Remote URLs (only used in remote mode) ----------
-LANGID_URL = os.environ.get("LANGID_SPACE_URL", "https://abyayel-fasttext-langid.hf.space/detect")
-SENTIMENT_URL = os.environ.get("SENTIMENT_SPACE_URL", "https://abyayel-sentiment-models.hf.space/sentiment")
-TOPIC_URL = os.environ.get("TOPIC_SPACE_URL", "https://abyayel-topic-model.hf.space/suggest-topics")
-KEYWORD_URL = os.environ.get("KEYWORD_SPACE_URL", "https://abyayel-keyword-extractor.hf.space/extract")
+LANGID_URL = os.environ.get("LANGID_SPACE_URL", "https://abraham-ad77-ethio-langid.hf.space/detect")
+SENTIMENT_URL = os.environ.get("SENTIMENT_SPACE_URL", "https://abraham-ad77-ethio-sentiment.hf.space/sentiment")
+TOPIC_URL = os.environ.get("TOPIC_SPACE_URL", "https://abraham-ad77-ethio-topic-only.hf.space/suggest-topics")
+KEYWORD_URL = os.environ.get("KEYWORD_SPACE_URL", "https://abraham-ad77-ethio-keywords.hf.space/extract")
 
 # ---------- API Key for remote Spaces ----------
 INTERNAL_API_KEY = os.environ.get("INTERNAL_API_KEY", "")
